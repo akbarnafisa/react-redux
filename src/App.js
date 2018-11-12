@@ -1,3 +1,5 @@
+import './styles/main.css'
+
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
@@ -11,6 +13,8 @@ import CreateProject from './components/projects/CreateProject'
 import SignIn from './components/auth/SignIn.js'
 import SignUp from './components/auth/SignUp'
 
+import TicTacToe from './components/tictactoe/tictactoe'
+
 class App extends Component {
   render() {
     return (
@@ -23,7 +27,7 @@ class App extends Component {
             <Route path="/createproject" component={CreateProject}></Route>
             <Route path="/signin" component={SignIn}></Route>
             <Route path="/signup" component={SignUp}></Route>
-
+            <Route path="/tictactoe" component={TicTacToe}></Route>
           </Switch>
         </div>
       </BrowserRouter>

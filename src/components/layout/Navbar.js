@@ -14,7 +14,11 @@ const Navbar = (props) => {
         <Link to="/" className="brand-logo">
           MarioPlan
         </Link>
+
         {links}
+        <Link to="/tictactoe" className="right">
+          Tic Tac Toe
+        </Link>
       </div>
     </nav>
   )
