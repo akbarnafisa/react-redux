@@ -19,13 +19,16 @@ const Navbar = (props) => {
         <Link to="/tictactoe" className="right">
           Tic Tac Toe
         </Link>
+        <Link to="/todo" className="right">
+          Todo
+        </Link>
       </div>
     </nav>
   )
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  // console.log(state)
   return {
     auth: state.firebase.auth,
     profile: state.firebase.profile

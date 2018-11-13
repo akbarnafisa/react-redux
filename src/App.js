@@ -14,6 +14,7 @@ import SignIn from './components/auth/SignIn.js'
 import SignUp from './components/auth/SignUp'
 
 import TicTacToe from './components/tictactoe/tictactoe'
+import Todo from './components/Todo/Todo'
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/signin" component={SignIn}></Route>
             <Route path="/signup" component={SignUp}></Route>
             <Route path="/tictactoe" component={TicTacToe}></Route>
+            <Route path="/todo" component={Todo}></Route>
           </Switch>
         </div>
       </BrowserRouter>
